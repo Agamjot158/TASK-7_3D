@@ -1,10 +1,10 @@
-import time                             
-from time import sleep                  #importing time library and its sleep function
+import time                             # Libraries used for the task
+from time import sleep                  
 import RPi.GPIO as GPIO                  
 from gpiozero import Reading
 from gpiozero import PWMLED
 
-GPIO.setmode(GPIO.BOARD)                  #using GPIO naming convention
+GPIO.setmode(GPIO.BOARD)                  # setting up board
 
 LED = PWMLED(18)       # setting up the led at GPIO 18
 ECHO = 23              #setting ultrasonic sensor and definig its pins
